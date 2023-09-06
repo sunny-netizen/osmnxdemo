@@ -179,37 +179,36 @@ primary                           1029
 cycleway                           336
 unclassified                       332
 [steps, footway]                   152
-pedestrian                          84
 path                                84
+pedestrian                          84
 trunk                               50
 steps                               42
 motorway_link                       38
 secondary_link                      29
-[service, residential]              27
+[residential, service]              27
 [residential, footway]              24
 [service, footway]                  24
 [path, footway]                     16
 motorway                            15
 trunk_link                          13
-[path, residential]                 10
 tertiary_link                       10
+[residential, path]                 10
+[unclassified, service]              8
+[steps, path]                        6
+[pedestrian, footway]                6
 primary_link                         6
-[path, steps]                        6
-[service, unclassified]              4
-[cycleway, footway]                  4
 [residential, steps, footway]        4
-[unclassified, service]              4
-[steps, pedestrian]                  4
-[pedestrian, footway]                3
-[footway, pedestrian]                3
-track                                2
-[path, steps, footway]               2
-[track, footway]                     2
-[service, cycleway]                  2
-[residential, tertiary]              2
-[steps, footway, corridor]           2
+[cycleway, footway]                  4
+[steps, pedestrian]                  3
 [residential, steps]                 2
+[track, footway]                     2
+[steps, path, footway]               2
+[steps, corridor, footway]           2
+track                                2
+[residential, tertiary]              2
+[cycleway, service]                  2
 [unclassified, footway]              2
+[pedestrian, steps]                  1
 Name: highway, dtype: int64</code></pre>
 </div>
 </div>
@@ -226,15 +225,15 @@ Name: highway, dtype: int64</code></pre>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>edge_types <span class="op">=</span> edges[<span class="st">'highway'</span>].value_counts()</span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>edge_types</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_25394/3233845876.py:4: FutureWarning:
+<pre><code>/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_27455/3233845876.py:4: FutureWarning:
 
 The default value of regex will change from True to False in a future version.
 
-/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_25394/3233845876.py:5: FutureWarning:
+/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_27455/3233845876.py:5: FutureWarning:
 
 The default value of regex will change from True to False in a future version.
 
-/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_25394/3233845876.py:6: FutureWarning:
+/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_27455/3233845876.py:6: FutureWarning:
 
 The default value of regex will change from True to False in a future version.
 </code></pre>
