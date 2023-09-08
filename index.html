@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My document</title>
+<title>Example for OpenStreetMap Data Extraction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My document</h1>
+<h1 class="title">Example for OpenStreetMap Data Extraction</h1>
 </div>
 
 
@@ -169,7 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at counts per edge type</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>edge_types <span class="op">=</span> edges[<span class="st">'highway'</span>].value_counts()</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>edge_types</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>footway                          11420
 service                           9333
 residential                       7484
@@ -179,36 +179,39 @@ primary                           1029
 cycleway                           336
 unclassified                       332
 [steps, footway]                   152
-path                                84
 pedestrian                          84
+path                                84
 trunk                               50
 steps                               42
 motorway_link                       38
 secondary_link                      29
-[residential, service]              27
 [residential, footway]              24
 [service, footway]                  24
 [path, footway]                     16
 motorway                            15
+[residential, service]              14
+[service, residential]              13
 trunk_link                          13
 tertiary_link                       10
-[residential, path]                 10
 [unclassified, service]              8
-[steps, path]                        6
-[pedestrian, footway]                6
+[residential, path]                  6
+[path, steps]                        6
 primary_link                         6
+[path, residential]                  4
+[steps, pedestrian]                  4
 [residential, steps, footway]        4
 [cycleway, footway]                  4
-[steps, pedestrian]                  3
-[residential, steps]                 2
-[track, footway]                     2
-[steps, path, footway]               2
+[footway, pedestrian]                3
+[pedestrian, footway]                3
 [steps, corridor, footway]           2
+[service, cycleway]                  2
 track                                2
-[residential, tertiary]              2
-[cycleway, service]                  2
+[track, footway]                     2
+[path, steps, footway]               2
+[residential, steps]                 2
 [unclassified, footway]              2
-[pedestrian, steps]                  1
+[tertiary, residential]              1
+[residential, tertiary]              1
 Name: highway, dtype: int64</code></pre>
 </div>
 </div>
@@ -225,20 +228,20 @@ Name: highway, dtype: int64</code></pre>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>edge_types <span class="op">=</span> edges[<span class="st">'highway'</span>].value_counts()</span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>edge_types</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_27455/3233845876.py:4: FutureWarning:
+<pre><code>/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_43240/3233845876.py:4: FutureWarning:
 
 The default value of regex will change from True to False in a future version.
 
-/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_27455/3233845876.py:5: FutureWarning:
+/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_43240/3233845876.py:5: FutureWarning:
 
 The default value of regex will change from True to False in a future version.
 
-/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_27455/3233845876.py:6: FutureWarning:
+/var/folders/13/hf_sfnls1lq6kn8vsc92q40h0000gn/T/ipykernel_43240/3233845876.py:6: FutureWarning:
 
 The default value of regex will change from True to False in a future version.
 </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>roads       22404
 path        11822
 cycleway      340

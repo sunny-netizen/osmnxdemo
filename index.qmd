@@ -1,5 +1,5 @@
 ---
-title: "My document"
+title: "Example for OpenStreetMap Data Extraction"
 format:
   html:
     toc: false
